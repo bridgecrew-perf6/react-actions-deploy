@@ -1,0 +1,300 @@
+.Payment__stepper {
+  display: flex;
+  background-image: url(../assets/payment/background.png);
+  width: 100%;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+  color: white;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 10%;
+}
+
+@media (max-width: 1383px) {
+  .Payment__stepper {
+    overflow-y: scroll;
+    padding-top: 210px;
+  }
+
+  .bg-coins {
+    left: -10rem;
+    bottom: 0rem;
+    width: 389.89px;
+    height: 329px;
+    background-position-y: 40px;
+  }
+}
+
+@media (max-width: 780px) {
+  .bg-coins {
+    visibility: hidden;
+  }
+
+  .Payment__stepper {
+    flex-direction: column;
+  }
+
+  .Payment__stepper-form {
+    margin-top: 25px;
+    width: 337px;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Payment__stepper-form > div {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 337px;
+    padding-left: 50px;
+  }
+
+  .Payment__stepper-form label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 337px;
+  }
+
+  .Payment__stepper-form select {
+    width: 337px;
+  }
+
+  .Payment__stepper > div:nth-child(2) {
+    width: 337px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Payment__stepper > div:nth-child(1) {
+    width: 337px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Payment__stepper-form input {
+    width: 337px;
+  }
+
+  .Payment__stepper-form > div > div {
+    display: flex;
+    flex-direction: column;
+    width: 337px;
+    margin-right: 0px;
+  }
+
+  .Payment__stepper > div > img {
+    width: 151px;
+    height: 75px;
+  }
+
+  .Payment__stepper > div > p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    width: 337px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  .Payment__stepper-form > h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 15px;
+    align-self: center;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+
+  .div-100 button:nth-child(1) {
+    width: 50%;
+  }
+
+  .div-100 {
+    display: flex;
+    justify-content: center !important;
+    padding-left: 30px !important;
+    flex-direction: row;
+  }
+
+  .div-100 button:nth-child(1) {
+    width: 113px;
+    height: 31px;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+}
+
+.bg-coins {
+  position: absolute;
+  left: -18rem;
+  top: 25rem;
+}
+
+.stepper__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.Payment__stepper > div:nth-child(1) {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Payment__stepper > div > p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.Payment__stepper > div:nth-child(2) {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Payment__stepper-form > h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 15px;
+  align-self: flex-start;
+}
+
+.Payment__stepper-form {
+  display: flex;
+  flex-direction: column;
+  width: 437px;
+  height: 100%;
+}
+
+.Payment__stepper-form > div {
+  display: flex;
+  justify-content: space-between;
+  width: 437px;
+}
+
+.Payment__stepper-form > div > div {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  margin-right: 10px;
+}
+
+.Payment__stepper-form label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.Payment__stepper-form input {
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.Payment__stepper-form select {
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.Payment__stepper-form button {
+  border: none;
+  outline: none;
+  border-radius: 19px;
+  height: 40px;
+  padding: 0 10px;
+  background-color: #009242;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.Payment__stepper-form p {
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.fileInput {
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.div-100 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0px;
+}
+
+.div-100 button:nth-child(1) {
+  color: white;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #b2b3b4;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px rgba(158, 168, 189, 0.31);
+  border-radius: 25px;
+  width: 113px;
+  height: 31px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.div-100 button:nth-child(2) {
+  color: white;
+  font-size: 14px;
+  background: #009242;
+  box-shadow: 0px 0px 5px rgba(158, 168, 189, 0.31);
+  border-radius: 24px;
+  width: 50%;
+  height: 31px;
+  margin-left: 20px;
+  cursor: pointer;
+}

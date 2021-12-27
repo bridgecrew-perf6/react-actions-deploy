@@ -1,0 +1,188 @@
+.graffitiContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  background-image: url("../assets/tftt/graffiti.png");
+  background-color: black;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  gap: 1rem;
+}
+
+.graffitiContainer > h2 {
+  font-family: 'Cooper Hewitt', sans-serif;
+  font-size: 2.5rem;
+}
+
+.graffitiContainer > h2 > span {
+  color: #F10505;
+}
+
+.graffitiContainer > h3 {
+  font-family: 'Steinbeck Regular', sans-serif;
+  font-size: 1.2;
+  line-height: 1.5rem;
+}
+
+.graffitiContainer > h2,
+.graffitiContainer > h3 {
+  padding: 0 1rem;
+}
+
+.reelContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 1.5rem;
+  max-width: 450px;
+}
+
+.reel {
+  width: 64px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: black;
+  background-image: url('../assets/tftt/MovieReelVertical.png');
+  background-repeat-x: no-repeat;
+}
+
+.reel:last-child {
+  transform: rotate(180deg);
+}
+
+.imagesContainer {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1;
+}
+
+.image > span {
+  display: none;
+}
+
+@media (hover: hover) {
+  .image:hover > span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    background-color: #F10505;
+    font-family: 'Cooper Hewitt', sans-serif;
+    font-size: 1.5rem;
+    cursor: default;
+  }
+}
+
+.image:nth-child(1) {
+  background-image: url("../assets/tftt/reel1Mob.png");
+  background-position: center 35%;
+}
+
+.image:nth-child(2) {
+  background-image: url("../assets/tftt/reel2Mob.png");
+}
+
+.image:nth-child(3) {
+  background-image: url("../assets/tftt/reel3Mob.png");
+}
+
+.image:nth-child(4) {
+  background-image: url("../assets/tftt/reel4Mob.png");
+}
+
+@media screen and (min-width: 768px) {
+  .graffitiContainer{
+    gap: 1.5rem;
+  }
+
+  .graffitiContainer > h2 {
+    font-size: 3rem;
+  }
+  .graffitiContainer > h3 {
+    font-size: 2rem;
+  }
+
+  .graffitiContainer > h2,
+  .graffitiContainer > h3 {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .graffitiContainer {
+    padding: 6rem 0;
+  }
+
+  .graffitiContainer > h2 {
+    font-size: 4rem;
+  }
+
+  .graffitiContainer > h3{
+    font-size: 2.5rem;
+  }
+
+
+  .reelContainer {
+    flex-direction: column;
+    max-width: 1600px;
+  }
+
+  .reel {
+    background-image: url('../assets/tftt/moviereel.png');
+    height: 64px;
+    width: 100%;
+    background-repeat: initial no-repeat;
+  }
+
+  .imagesContainer{
+    flex-direction: row;
+  }
+
+  .image:nth-child(1) {
+    background-image: url("../assets/tftt/reel1.png");
+  }
+
+  .image:nth-child(2) {
+    background-image: url("../assets/tftt/reel2.png");
+  }
+  
+  .image:nth-child(3) {
+    background-image: url("../assets/tftt/reel3.png");
+  }
+
+  .image:nth-child(4) {
+    background-image: url("../assets/tftt/reel4.png");
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .graffitiContainer {
+    padding: 9rem 0;
+  }
+
+  .graffitiContainer > h2 {
+    font-size: 6rem;
+  }
+
+  .graffitiContainer > h3{
+    font-size: 3rem;
+  }
+}
